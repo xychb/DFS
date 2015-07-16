@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CME" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=CME;Integrated Security=True" SettingsObjectName="DFS.Properties.Settings" SettingsPropertyName="CMEConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SMConnectivity" Member="SMConnectivities">
+    <Type Name="SMConnectivity">
+      <Column Name="ConnectivityID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromObjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FromObjectTypeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToObjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToObjectTypeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectivityType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SequenceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConnectivityHWStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
